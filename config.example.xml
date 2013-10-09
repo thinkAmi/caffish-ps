@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Configuration>
+    <GPG>
+        <LocalUser>HOGEHOGE</LocalUser>
+        <KeyServer>pgp.mit.edu</KeyServer>
+    </GPG>
+    <SMTP>
+        <Server>
+            <Host>smtp.gmail.com</Host>
+            <!-- GmailではNet.Mailは587、Web.Mailは465が標準Portです -->
+            <Port>587</Port>
+            <EnableSSL>true</EnableSSL>
+        </Server>
+        <Credential>
+            <User>fuga@example.com</User>
+            <!-- パスワードがXMLに記載されていなければ、コンソール入力となります -->
+            <Password></Password>
+        </Credential>
+    </SMTP>
+    <Mail>
+        <Address>fuga@example.com</Address>
+        <UserName>fuga</UserName>
+    </Mail>
+    <Thunderbird>
+        <Path>drive:\path\to\Thunderbird.exe</Path>
+    </Thunderbird>
+</Configuration>
